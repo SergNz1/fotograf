@@ -117,9 +117,6 @@
 .portfolio__inner{
     width: 1110px;
     margin: 0 auto; 
-   
-    
-
 }
 .portfolio__images{
     display: flex;
@@ -136,7 +133,8 @@
 }
 .portfolio__title-box{ 
     display: flex;
-    justify-content: center;      
+    justify-content: center;  
+    
 }
 .portfolio__title{
     position: absolute;    
@@ -146,9 +144,22 @@
 .portfolio__title-opasity{
     position: absolute;  
     top: -155px;
-    z-index: 2;
+    z-index: 2; 
+    &::before{
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 2px;
+        background-color:#bd7c7c;    
+        top: -150px;
+        left: 50%;
+    }       
 }
-
+.portfolio__box-text{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 40px 0px 60px;
+}
 
 
 
