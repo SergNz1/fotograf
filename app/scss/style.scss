@@ -118,9 +118,10 @@
     width: 1110px;
     margin: 0 auto; 
 }
-.portfolio__images{
+.portfolio__blocks{
     display: flex;
     justify-content: space-between;
+    
 }
 .portfolio__box1{
     margin-top: 170px;
@@ -131,17 +132,20 @@
 .portfolio__box-text{
     width: 297px;
 }
-.portfolio__title-box{ 
+.portfolio__title-box,
+.about__title-box{ 
     display: flex;
     justify-content: center;  
     
 }
-.portfolio__title{
+.portfolio__title,
+.about__title{
     position: absolute;    
     top: -155px;
     z-index: 1;
 }
-.portfolio__title-opasity{
+.portfolio__title-opasity,
+.about__title-opasity{
     position: absolute;  
     top: -155px;
     z-index: 2; 
@@ -160,13 +164,88 @@
     font-weight: 700;
     margin: 40px 0px 60px;
 }
+.portfolio__box2{
+    position: relative;
+    
+}
+.portfolio__box4{
+    position: relative;
+    margin-top: 100px;
+    height: 525px;
+    margin-bottom: 150px;
+}
+.portfolio__box2-img{
+    position: absolute;
+    z-index: 5;
+    left: 0; 
+    top: 85px;
+}
+.portfolio__box2-back{
+    position: absolute;
+    z-index: 3;
+}
+.portfolio__box2-frame{
+    position: absolute;
+    z-index: 4;
+    top: 38px;
+    left: 423px;
+}
+.portfolio__box2-textbox{
+    position: absolute;
+    width: 276px;
+    height: 200px;
+    top: 150px;
+    left: 635px;
+    z-index: 5;
+}
+.portfolio__box2-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.portfolio__box2-cont{
+    font-size: 18px;
+    margin: 41px 0 60px;
+}
+
+
+.about__inner{
+    width: 1440px;
+    padding-right: 168px;
+}
+
+.about__blocks{   
+    display: flex;
+    justify-content: space-between;
+}
+.about__box1{
+    width: 90px;
+    height: 490px;
+    position: relative;
+    margin-top: 50px;
+}
+.about__box2{
+    position: relative;
+    width: 763px;
+    height: 513px;
+    margin-top: 124px;
+}
+.about__box1-img1,
+.about__box1-bg1,
+.about__box1-img2,
+.about__box1-bg2{
+    z-index: 3;
+    position: absolute;
+}
+.about__box1-img1{
+    z-index: 4;    
+    top: 50px;
+    left: 166px;
+}
+.about__box1-bg2{
+    z-index: 1;
+    top: 117px;
+    left: 30px;
+}
 
 
 
-
-
-
- 
-
-
-@import 'media';
